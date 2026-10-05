@@ -9,8 +9,8 @@
 //
 // Usage:
 //
-//	reddit-reader -subs HarryPotter,Drarry -interval 60m
-//	reddit-reader -subs HarryPotter -once
+//	reddit-reader -subs VirtualYoutubers,vtubers,anime,feminineboys -interval 60m
+//	reddit-reader -subs vtubers -once
 package main
 
 import (

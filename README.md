@@ -12,7 +12,8 @@ A minimal, **read-only** Reddit Data API client used by a private, single-user f
 - Keeps only: post id, subreddit, title, permalink, author name, score, created time.
 - Sends a descriptive User-Agent: `server:reddit-personal-reader:v0.1 (by /u/<operator>)`.
 
-Expected volume: about 5 subreddits × 24 polls/day ≈ 120 requests/day.
+Subreddits: r/VirtualYoutubers, r/vtubers, r/anime, r/feminineboys.
+Expected volume: 4 subreddits × 24 polls/day ≈ 96 requests/day.
 
 ## What it does not do
 
@@ -30,7 +31,7 @@ with a link back to the original thread on Reddit.
 
 ```sh
 export REDDIT_CLIENT_ID=... REDDIT_CLIENT_SECRET=... REDDIT_USERNAME=...
-go run ./cmd/reddit-reader -subs HarryPotter,Drarry -once
+go run ./cmd/reddit-reader -subs VirtualYoutubers,vtubers,anime,feminineboys -once
 ```
 
 Output is one JSON object per new post.
